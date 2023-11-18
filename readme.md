@@ -5,7 +5,7 @@ unit test is not test the implementation but the behavior that exposed by unit (
 test is not a unit-test if
 - talk to database
 - communicates over the network
-- touche the file system
+- touch the file system
 - can't run the same time as other test
 - need special configuration to run
 
