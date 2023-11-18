@@ -27,7 +27,8 @@ class OrderServiceTest {
 
   @Test
   void pay() throws IOException {
-    Order order = new ObjectMapper().readValue(new ClassPathResource("Order_1L.json").getFile(), Order.class);
+//    Order order = new ObjectMapper().readValue(new ClassPathResource("Order_1L.json").getFile(), Order.class);
+    Order order = new Order(1L, false);
 
     when(orderRepository.findById(1L))
       .thenReturn(Optional.ofNullable(order));
